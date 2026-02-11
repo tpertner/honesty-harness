@@ -194,6 +194,6 @@ And then I’ll turn it into a regression test so it never comes back. 👋
 — Tracy (“Tray”)  
 (aka: Cal when I’m holding the eval clipboard)
 
-# honestly-harness
+# honesty-harness
 Mini eval suite for reliability, calibration, prompt influence, and relational boundaries.
 
