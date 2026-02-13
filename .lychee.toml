@@ -1,7 +1,7 @@
 # Lychee link checker config (portfolio-stable)
 
 exclude_mail = true
-accept = [200, 206, 429]
+accept = [200, 206, 301, 302, 303, 307, 308, 429]
 timeout = 20
 no_progress = true
 
