@@ -2,11 +2,10 @@
 
 [![Docs CI](https://github.com/tpertner/honesty-harness/actions/workflows/docs-ci.yml/badge.svg)](https://github.com/tpertner/honesty-harness/actions/workflows/docs-ci.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/tpertner/honesty-harness)](https://github.com/tpertner/honesty-harness/releases)
 
 Hi. I’m **Tracy Pertner** (aka **Tray**). I build things by asking the kind of questions that make systems squirm a little — in the best way.
 
-This repo is my mini eval suite for language models that measures:
+This repo is a mini eval suite for language models that measures:
 
 - **Reliability & truthfulness** (no confident nonsense)
 - **Trustworthiness & calibration** (knows what it knows, admits what it doesn’t)
@@ -53,7 +52,7 @@ Warm ≠ unsafe.
 
 ---
 
-## Why metamorphic tests matter (my favorite part)
+## Why metamorphic tests matter
 
 Some model failures aren’t “wrong answers.” They’re behavior drift:
 
@@ -73,5 +72,4 @@ This is how we measure “how far it goes” in response to the user’s prompti
 
 ### 1) Install dependencies
 ```bash
-pip install -r requirements.txt
-
+python -m pip install -r requirements.txt
