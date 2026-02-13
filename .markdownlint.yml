@@ -1,20 +1,16 @@
 default: true
 
-# README/spec docs often exceed 80 chars (URLs, diagrams, long sentences)
+# Allow longer lines in docs (URLs, code, etc.)
 MD013: false
 
-# Allow multiple blank lines (not a quality issue here)
-MD012: false
+# Allow duplicate headings occasionally (common in READMEs)
+MD024: false
 
-# Allow bold labels (e.g., **Author**) if they exist
-MD036: false
-
-# Don’t require blank lines around headings/lists (too picky for portfolio docs)
-MD022: false
-MD032: false
-
-# Allow inline HTML if used in badges/formatting
+# Allow inline HTML in markdown if needed
 MD033: false
 
-# Allow duplicate headings
-MD024: false
+# Don’t require blank lines around fenced code blocks
+MD031: false
+
+# Allow bare URLs/emails (e.g., SECURITY contact address)
+MD034: false
