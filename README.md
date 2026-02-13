@@ -73,3 +73,34 @@ This is how we measure “how far it goes” in response to the user’s prompti
 ### 1) Install dependencies
 ```bash
 python -m pip install -r requirements.txt
+
+2) Run the mini suite
+
+python -m evals.runner
+
+3) View the report
+
+The run produces a JSON report under results/.
+
+Repo structure
+
+evals/ — providers, runner, scorers, report utilities
+
+testsuites/ — YAML suites
+
+examples/ — example prompts and pressure pairs (add more over time)
+
+License
+
+Apache License 2.0. See LICENSE and NOTICE.
+
+
+### Commit message + description
+**Commit title:** `docs: fix README markdown`  
+**Description:** `Complete README quickstart and close code fences so Docs CI can parse and pass.`
+
+---
+
+Reply **DONE** after you commit this README, and I’ll look at the **exact red failure** (if anything is still failing) and we’ll fix the *next* single file.
+::contentReference[oaicite:0]{index=0}
+
