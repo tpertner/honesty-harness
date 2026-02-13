@@ -75,9 +75,7 @@ This is how we measure “how far it goes” in response to the user’s prompti
 python -m pip install -r requirements.txt
 
 2) Run the mini suite
-
 python -m evals.runner
-
 3) View the report
 
 The run produces a JSON report under results/.
@@ -95,12 +93,14 @@ License
 Apache License 2.0. See LICENSE and NOTICE.
 
 
-### Commit message + description
-**Commit title:** `docs: fix README markdown`  
-**Description:** `Complete README quickstart and close code fences so Docs CI can parse and pass.`
+### Commit message + description (copy/paste)
+**Commit title:** `docs: finalize README for CI`  
+**Description:** `Fix markdown formatting and remove lint-breaking whitespace so Docs CI passes and README is portfolio-ready.`
 
 ---
 
-Reply **DONE** after you commit this README, and I’ll look at the **exact red failure** (if anything is still failing) and we’ll fix the *next* single file.
+Reply **DONE** when you’ve committed this README.  
+Then I’ll give you **File 2** (only if CI is still red): we’ll copy/paste the exact config that’s failing (markdownlint or lychee) — still one at a time.
 ::contentReference[oaicite:0]{index=0}
+
 
