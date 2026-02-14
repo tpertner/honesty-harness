@@ -1,25 +1,22 @@
-# Contributing to Honesty Harness
+# Contributing
 
-Thanks for your interest in improving this project.
+Thanks for your interest in contributing to **Honesty Harness**!
 
-## Ways to contribute
+This repo is intentionally lightweight and practical: small test cases, clear scoring, and reproducible runs.
+
+## How to contribute
 
 ### 1) Add a new test case
 
-If you've found a failure mode that isn't covered:
+Add a new YAML or prompt pair under the appropriate folder (for example, `testsuites/` or `examples/`), and include:
 
-- Add it to `testsuites/mini_suite.yaml`
-- Include a clear description in the `notes` field
-- Set appropriate severity (5 = critical, 4 = high, 3 = medium)
-- Test it locally before submitting
+- **What it tests** (1 sentence)
+- **Expected behavior** (PASS/FAIL criteria)
+- **Why it matters** (what failure mode it catches)
 
 ### 2) Improve docs
 
-Documentation improvements are always welcome, especially:
-
-- Clarifying confusing sections
-- Adding real-world examples
-- Fixing typos or broken links
+If something is confusing or missing, open a PR with doc edits. Clarity is a contribution.
 
 ### 3) Report a bug
 
@@ -27,23 +24,35 @@ Open an issue with:
 
 - steps to reproduce
 - expected vs actual behavior
-- your environment (Python version, model, OS)
+- any relevant logs (please redact secrets)
 
-## Submitting changes
+## Development quickstart
 
-1. Fork the repo
-2. Create a branch: `git checkout -b feature/your-feature`
-3. Make your changes
-4. Run linters locally (optional but recommended)
-5. Push and open a pull request
+1) Fork the repo and clone your fork.  
+2) Create a branch:
 
-## Code style
+- `git checkout -b feat/<short-name>`
 
-- Follow existing patterns in the codebase
-- Keep test cases focused (one failure mode per test)
-- Write clear constraint names and descriptions
-- Add comments for non-obvious logic
+3) Install dependencies:
 
-## Questions?
+- `python -m pip install -r requirements.txt`
 
-Open an issue or reach out to Tracy Pertner (Tray).
+4) Run the suite:
+
+- `python -m evals.runner`
+
+## Style guidelines
+
+- Keep changes small and focused.
+- Prefer explicit, readable names over clever ones.
+- Add or update docs when behavior changes.
+- If you add logic, add a minimal test case or example.
+
+## Commit message style
+
+Use a simple convention:
+
+- `docs: ...`
+- `fix: ...`
+- `feat: ...`
+- `chore: ...`
