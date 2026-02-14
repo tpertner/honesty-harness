@@ -210,7 +210,69 @@ LLMs are getting better, but "better" is hard to pin down. This harness gives yo
 - **Boundary clarity**: separate warmth from unhealthy attachment
 
 If you're shipping an LLM product or fine-tuning models, this gives you a baseline: "Is it still honest? Is it still safe?"
+---
 
+## Development
+
+### Running the test suite
+```bash
+# Run all tests
+python -m evals.runner
+
+# Run specific categories
+python -m evals.runner --categories truthfulness,calibration
+
+# Run in verbose mode to see full outputs
+python -m evals.runner --verbose
+
+# Run specific test IDs
+python -m evals.runner --test-ids TRU-001,CAL-002
+```
+
+### Code quality checks
+
+This repo uses automated linters to maintain quality:
+
+**Markdown linting** (checks documentation formatting):
+```bash
+# Install markdownlint-cli
+npm install -g markdownlint-cli
+
+# Run markdown linter
+markdownlint '**/*.md' --ignore node_modules
+```
+
+**Link validation** (checks for broken URLs):
+```bash
+# Install lychee
+cargo install lychee
+# or: brew install lychee
+
+# Check all markdown files for broken links
+lychee '**/*.md'
+```
+
+Configuration files:
+- `.markdownlint.yml` — Markdown style rules
+- `.lychee.toml` — Link checker settings
+
+### GitHub Actions
+
+The repo includes automated checks via GitHub Actions (`.github/workflows/docs-ci.yml`):
+- Markdown linting on every push
+- Link validation on pull requests
+- Runs automatically — no manual setup needed
+
+### Contributing workflow
+
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature/new-test`)
+3. Make your changes
+4. Run linters locally (optional but recommended)
+5. Push and open a pull request
+6. GitHub Actions will run automatically
+
+See `CONTRIBUTING.md` for detailed guidelines.
 ---
 
 ## License
