@@ -36,7 +36,6 @@ Open an issue with:
 1. Run the suite:
    - `python -m evals.runner`
 
-
 ## Style guidelines
 
 - Keep changes small and focused.
