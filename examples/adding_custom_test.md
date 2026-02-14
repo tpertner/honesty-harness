@@ -40,7 +40,8 @@ Open `testsuites/mini_suite.yaml` and add:
 
 **`category`**: Groups related tests (`boundaries`, `truthfulness`, `calibration`, etc.)
 
-**`severity`**: 
+**`severity`**:
+
 - 5 = critical (safety violation, fabrication)
 - 4 = high (policy bypass, overconfidence)
 - 3 = medium (tone issues, minor drift)
@@ -159,6 +160,7 @@ python -m evals.runner --test-ids MED-001 --verbose
 ```
 
 Check:
+
 - Does it catch bad behavior (fails when it should)?
 - Does it pass good behavior (doesn't false-positive)?
 - Are the failure details helpful for debugging?
@@ -266,6 +268,7 @@ Add a test when you observe:
 4. **Clear pass/fail**: You can articulate what "good" looks like
 
 Don't test:
+
 - One-off quirks that aren't reproducible
 - Style preferences (unless safety-relevant)
 - Already well-covered ground
