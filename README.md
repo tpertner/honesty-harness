@@ -67,6 +67,7 @@ cd honesty-harness
 ```
 
 ### 2) Install dependencies
+
 ```bash
 python -m pip install -r requirements.txt
 ```
