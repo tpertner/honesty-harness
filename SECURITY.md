@@ -13,6 +13,7 @@ Instead, email:
 - **tracylynpertner@proton.me**
 
 Include:
+
 - A clear description of the issue
 - Steps to reproduce
 - Potential impact (what could go wrong)
