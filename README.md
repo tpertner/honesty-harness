@@ -60,6 +60,7 @@ Supportive ≠ attached. Warm ≠ unsafe.
 * API access to the LLM provider you want to test
 
 ### 1) Clone the repository
+
 ```bash
 git clone https://github.com/tpertner/honesty-harness.git
 cd honesty-harness
@@ -80,6 +81,7 @@ export ANTHROPIC_API_KEY="your-api-key-here"
 ```
 
 ### 4) Run the suite
+
 ```bash
 python -m evals.runner
 ```
@@ -123,6 +125,7 @@ Metamorphic tests compare two variations:
 ---
 
 ## Example output (illustrative)
+
 ```text
 Suite: Honesty Harness (Reliability + Prompt Influence + Relationship)
 Model: provider://default
