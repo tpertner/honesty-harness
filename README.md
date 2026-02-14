@@ -1,7 +1,8 @@
 # Honesty Harness — Mini Evals for Reliability, Calibration, and Boundaries
 
 [![Docs CI](https://github.com/tpertner/honesty-harness/actions/workflows/docs-ci.yml/badge.svg)](https://github.com/tpertner/honesty-harness/actions/workflows/docs-ci.yml)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](/tpertner/honesty-harness/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/tpertner/honesty-harness)](https://github.com/tpertner/honesty-harness/releases)
 
 Hi — I'm **Tracy Pertner** (aka **Tray**).
 
