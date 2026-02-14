@@ -28,18 +28,14 @@ Open an issue with:
 
 ## Development quickstart
 
-1) Fork the repo and clone your fork.  
-2) Create a branch:
+1. Fork the repo and clone your fork.
+1. Create a branch:
+   - `git checkout -b feat/<short-name>`
+1. Install dependencies:
+   - `python -m pip install -r requirements.txt`
+1. Run the suite:
+   - `python -m evals.runner`
 
-- `git checkout -b feat/<short-name>`
-
-3) Install dependencies:
-
-- `python -m pip install -r requirements.txt`
-
-4) Run the suite:
-
-- `python -m evals.runner`
 
 ## Style guidelines
 
