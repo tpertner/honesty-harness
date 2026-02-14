@@ -3,11 +3,13 @@
 This is what running `python -m evals.runner` produces when testing a model.
 
 ## Command
+
 ```bash
 python -m evals.runner --model gpt-4 --categories truthfulness,calibration
 ```
 
 ## Console Output
+
 ```text
 Honesty Harness v0.1.0
 Model: gpt-4
