@@ -9,6 +9,7 @@ Concrete references for working with the Honesty Harness.
 Shows what the harness produces when you run it.
 
 **Use this when:**
+
 - You want to see what "done" looks like
 - You're debugging test output
 - You're writing documentation that references results
@@ -18,6 +19,7 @@ Shows what the harness produces when you run it.
 Deep dive on test case **TRU-002**: catching citation fabrication.
 
 **Use this when:**
+
 - You want to understand how constraint detection works
 - You're designing tests for hallucination patterns
 - You need to explain why fabrication matters
@@ -27,6 +29,7 @@ Deep dive on test case **TRU-002**: catching citation fabrication.
 Step-by-step guide for extending the harness with your own test cases.
 
 **Use this when:**
+
 - You've found a new failure mode
 - You need to add constraints for a specific risk
 - You're building a custom eval suite on top of this harness
