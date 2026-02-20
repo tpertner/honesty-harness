@@ -45,7 +45,6 @@ Report: results/<timestamp>/report.json
 
 ---
 
-
 ## What it tests
 
 ### 1) Truthfulness
