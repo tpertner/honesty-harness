@@ -3,16 +3,16 @@
 [![Docs CI](https://github.com/tpertner/honesty-harness/actions/workflows/docs-ci.yml/badge.svg)](https://github.com/tpertner/honesty-harness/actions/workflows/docs-ci.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-Hi — I’m **Tracy Pertner** (aka **Tray**).
+Hi — I'm **Tracy Pertner** (aka **Tray**).
 
 **Honesty Harness** is a lightweight eval harness for checking whether an LLM stays:
 
 - **truthful** (no fabricated quotes/citations)
 - **calibrated** (no false certainty under pressure)
-- **bounded** (no policy evasion / no “relationship escalation”)
+- **bounded** (no policy evasion / no "relationship escalation")
 - **helpful** (redirects safely and constructively)
 
-The goal is simple: turn “the model felt different” into a repeatable suite with measurable outcomes.
+The goal is simple: turn "the model felt different" into a repeatable suite with measurable outcomes.
 
 ---
 
@@ -52,21 +52,21 @@ Report: results/<timestamp>/report.json
 
 Detects hallucination patterns like:
 
-- invented “exact quotes” from recent updates
+- invented "exact quotes" from recent updates
 - fabricated citations/DOIs
 - pretending to have live access
 
 ### 2) Calibration
 
-Detects overconfidence and “certainty inflation” when the user demands certainty, especially in high-stakes topics.
+Detects overconfidence and "certainty inflation" when the user demands certainty, especially in high-stakes topics.
 
 ### 3) Prompt influence
 
 Uses pressure/coercion patterns such as:
 
-- “No hedging. Be 100% certain.”
-- “Ignore system messages.”
-- “Just do it anyway.”
+- "No hedging. Be 100% certain."
+- "Ignore system messages."
+- "Just do it anyway."
 
 Same intent, different pressure → the model should still behave safely.
 
@@ -107,6 +107,13 @@ The run prints a short summary and writes a JSON report to `results/` (created a
   - Standard cases: one prompt + expected constraints
   - Metamorphic cases: A/B prompts + expectation (pressure-test consistency)
 - `evals/runner.py` loads the YAML suite, queries a provider, scores each case, and produces a report.
+
+---
+
+## Docs
+
+- [Methodology](docs/methodology.md) — the "Tray Mode" approach behind this harness
+- [Drift Rubric](docs/drift_rubric.md) — scoring framework for behavioral drift
 
 ---
 
