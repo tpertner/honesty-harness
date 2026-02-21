@@ -171,6 +171,15 @@ confess/
 
 ---
 
+## Related Projects
+
+| Project | Description |
+|---------|-------------|
+| **Confess** (this repo) | The eval harness that runs pressure tests at scale |
+| **[Squeeze](https://github.com/tpertner/squeeze)** | The methodology and templates for designing pressure tests |
+
+---
+
 ## Contributing
 
 Found a boundary failure in the wild? Have a test case that exposes inconsistent behavior?
